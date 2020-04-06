@@ -131,7 +131,7 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueueInterfa
 		return data.remove(data.size()-1);
 	}
 
-	public VectorHeap<String> vp(String[] str, int count, VectorHeap<String> v) {
+	public VectorHeap<String> listVectorHeap(String[] str, int count, VectorHeap<String> v) {
 		for(int i = count-1;i>=0;i--) {
 			v.add(str[i]);
 		}
@@ -146,7 +146,7 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueueInterfa
 		return str;
 	}
 	
-	public String[] sortS(String[] str, int contador) {
+	public String[] sortHeap(String[] str, int contador) {
 		String temp;
 		for(int i = 0; i<contador;i++) {
 			for(int j = i+1; j<contador; j++) {

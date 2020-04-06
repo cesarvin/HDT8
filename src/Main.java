@@ -114,13 +114,13 @@ public class Main {
                     while(!exit) {
 						try {
 							
+							//se ordena el heap
 							int count = Heap.size();
 							String str[] = new String[count];
 							str = Heap.toString(Heap, count);
-							//se ordena el heap
-							str = Heap.sortS(str, count);
+							str = Heap.sortHeap(str, count);
 							
-							Heap.vp(str, count, Heap);
+							Heap.listVectorHeap(str, count, Heap);
 							
 							System.out.println("Pacientes en cola listos: ");
 							System.out.println("1. Ver cola de pacientes \n2. Ver siguiente \n3. Salir" + "\n");
